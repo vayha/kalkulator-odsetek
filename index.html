@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form>
+        <label for="wplata">Wypłata:</label>
+        <input type="number" id="wplata" name="wplata" min="0" value="0">
+        <br>
+
+
+        <label for="okres-kapitalizacji">Częstotliwość Kapitalizacji</label>
+        <select name="okres-kapitalizacji" id="okres-kapitalizacji">
+            <option value="12">Miesieczne</option>
+            <option value="4">Kwartalne</option>
+            <option value="1">Rocznie</option>
+        </select>
+        <br>
+
+        <label for="ilosc-lat">Ilość lat</label>
+        <input type="number" id="ilosc-lat" name="ilosc-lat" min=1 value=1>
+        <br>
+
+        <label for="oprocentowanie">Stopa zwrotu%</label>
+        <input type="number" id="oprocentowanie" name="oprocentowanie" min="0" value="0">
+        <br>
+        <input type="checkbox" id="podatek" name="podatek">
+        <label for="podatek">Uwzględnij podatek Belki 19%</label>
+        <br>
+        <input type="submit" onclick="oblicz(event)"  value="oblicz">
+
+
+
+    </form>
+    <p id="wynik">WYNIK</p>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
